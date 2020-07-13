@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon"
+  href="3333.jpg">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>WHAT</title>
+  </head>
+  <body>
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+      <section>
+
+    <h1>Exersice</h1>
+
+    <style>
+    h1{
+      color:white;
+      text-decoration: none;
+      font-size: 50px;
+    }
+    </style>
+    <ul>
+      <ul><a href="running.html">Running</a></ul>
+      <ul><a href="sycle.html">Sycle</a></ul>
+      <ul><a href="stair.html">Stair Climbing</a></ul>
+    </ul>
+
+    <p><img src="exer/ef.jpg"></p>
+    <style>
+      img{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      </style>
+
+      <h3><a href="index.html">Back</a></h3>
+      <style>
+        h3{
+          text-align: center;
+          color:white;
+          text-decoration: none;
+          font-size: 20px;
+        }
+      </style>
+    <style>
+    body {background-color: black;}
+    </style>
+
+  </section>
+  <script type="text/javascript">
+  let progress = document.getElementById('progressbar');
+  let totalHeight = document.body.scrollHeight-window.innerHeight;
+  window.onscroll = function(){
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
+  }
+  </script>
+
+    </body>
+  <html>
